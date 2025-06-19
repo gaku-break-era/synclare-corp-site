@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<html lang="ja">
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お知らせ | NextNova</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+<header class="navbar">
+  <div class="container">
+    <div class="logo"><a href="top-page.html">NextNova</a></div>
+    <nav class="nav-links">
+      <a href="top-page.html">トップページ</a>
+      <a href="about.html">会社概要</a>
+      <a href="business.html">事業紹介</a>
+      <a href="recruit.html">採用</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<section class="nn-news-intro">
+  <h1>お知らせ</h1>
+  <p>NextNovaからのお知らせや更新情報を掲載しています。<br>
+     最新の取り組みやプロジェクトの進捗をお知らせします。</p>
+</section>
+
+<section class="news-content-section">
+  <div class="container">
+    <div class="nn-news-list">
+
+      <!-- 画像付きカード1 -->
+      <div class="nn-news-card">
+        <img src="img/news1.jpeg" alt="AIプロジェクト" class="nn-news-img">
+        <div class="nn-news-content">
+          <p class="nn-news-date">2025年6月10日</p>
+          <h2 class="nn-news-title">AI活用による新規プロジェクト始動</h2>
+          <p class="nn-news-excerpt">NextNovaはAI技術を活用した新しい都市分析プロジェクトを開始しました。</p>
+        </div>
+      </div>
+
+      <!-- 画像付きカード2 -->
+      <div class="nn-news-card">
+        <img src="img/news2.jpeg" alt="IoTパートナー契約" class="nn-news-img">
+        <div class="nn-news-content">
+          <p class="nn-news-date">2025年5月30日</p>
+          <h2 class="nn-news-title">IoT連携強化のためのパートナー契約を締結</h2>
+          <p class="nn-news-excerpt">主要ベンダーと協業し、IoTプラットフォームを強化していきます。</p>
+        </div>
+      </div>
+
+      <!-- テキストのみのリスト -->
+      <ul class="nn-news-text-list">
+        <li><span class="news-date">2025年5月12日</span>  スマートシティ構想への技術提供を開始</li>
+        <li><span class="news-date">2025年4月28日</span>  データ解析事業の拠点を拡大</li>
+        <li><span class="news-date">2025年4月05日</span>  地域連携プロジェクトの進捗を公開</li>
+        <li><span class="news-date">2025年3月22日</span>  NextNova主催の技術セミナー開催報告</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner container">
+    <div class="footer-left">
+      <div class="footer-logo-area">
+        <div class="footer-logo"><a href="top-page.html">NextNova</a></div>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-col">
+        <h4>私たちは</h4>
+        <ul>
+          <li><a href="about.html">代表挨拶</a></li>
+          <li><a href="about.html#profile">会社概要</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>事業紹介</h4>
+        <ul>
+          <li><a href="business.html">サービス</a></li>
+          <li><a href="business.html#results">実績紹介</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>お知らせ</h4>
+        <ul>
+          <li><a href="news.html">一覧</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>採用</h4>
+        <ul>
+          <li><a href="recruit.html">募集要項</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a href="contact.html">フォーム</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-company-tel">
+    <p class="footer-company">NextNova株式会社</p>
+    <p class="footer-tel">☏ 03-1234-5678</p>
+  </div>
+  <div class="footer-copy">
+    <p>&copy; 2025 NextNova Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+// ハンバーガーメニュー（デバッグ機能付き）
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM loaded - ハンバーガーメニュー初期化開始');
+  
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  
+  if (!navToggle) {
+    console.error('nav-toggle要素が見つかりません');
+    return;
+  }
+  
+  if (!navLinks) {
+    console.error('nav-links要素が見つかりません');
+    return;
+  }
+  
+  console.log('ハンバーガーメニュー要素見つかりました');
+  
+  navToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log('ハンバーガーメニューがクリックされました');
+    
+    navLinks.classList.toggle('active');
+    navToggle.classList.toggle('active');
+    
+    console.log('メニュー状態:', navLinks.classList.contains('active') ? '開' : '閉');
+  });
+
+  // メニューリンクをクリックした時にメニューを閉じる
+  document.querySelectorAll('.nav-links a').forEach((link, index) => {
+    link.addEventListener('click', () => {
+      console.log(`メニューリンク${index + 1}がクリックされました`);
+      navLinks.classList.remove('active');
+      navToggle.classList.remove('active');
+    });
+  });
+
+  // 画面の他の部分をクリックした時にメニューを閉じる
+  document.addEventListener('click', function(event) {
+    if (!navToggle.contains(event.target) && !navLinks.contains(event.target)) {
+      navLinks.classList.remove('active');
+      navToggle.classList.remove('active');
+    }
+  });
+  
+  // ウィンドウリサイズ時の処理
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+      navLinks.classList.remove('active');
+      navToggle.classList.remove('active');
+    }
+  });
+});
+</script>
+</body>
+</html>

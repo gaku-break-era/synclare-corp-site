@@ -1,0 +1,417 @@
+<!DOCTYPE html> 
+<html lang="ja">
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextNova株式会社</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+<header class="navbar">
+  <div class="container">
+    <div class="logo"><a href="top-page.html">NextNova</a></div>
+    <nav class="nav-links">
+      <a href="about.html">会社概要</a>
+      <a href="business.html">事業紹介</a>
+      <a href="news.html">お知らせ</a>
+      <a href="recruit.html">採用</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div id="particles-js"></div>
+  <div class="hero-content">
+    <h1>イノベーションで未来を拓く</h1>
+    <p>テクノロジーと創造力で新たな価値を生み出します</p>
+  </div>
+</section>
+
+<section class="intro-bridge">
+  <div class="container">
+    <h2>私たちは</h2>
+    <p>
+      株式会社NextNovaは、AI・IoT・データ解析などの最先端技術を駆使して、<br>
+      持続可能でスマートな都市づくりを支援しています。<br>
+      今ある暮らしを、未来のスタンダードに。人々の毎日がもっと快適で、安全で、豊かになる社会を目指しています。
+    </p>
+    <a href="about.html" class="btn btn-secondary">詳しくはこちら</a>
+  </div>
+  <div class="wave-container bottom">
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 320" preserveAspectRatio="none">
+      <path fill="#f4f8fb" fill-opacity="1"
+        d="M0,160 C480,240 960,80 1440,160 C1920,240 2400,80 2880,160 L2880,320 L0,320 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- 事業紹介セクション -->
+<section class="business-intro" id="business">
+  <div class="container">
+    <h2>事業紹介</h2>
+    <p class="business-description">
+      AI・IoT・データ解析の最先端技術を駆使して、<br>
+      持続可能でスマートな都市づくりを支援しています。
+    </p>
+    <div class="swiper business-swiper">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide business-item">
+            <img src="img/smartcity.jpeg" alt="スマートシティのイメージ" class="business-image">
+            <h3>スマートシティソリューション</h3>
+            <p>IoTセンサーとAI解析を組み合わせて、都市インフラの最適化を実現。交通流量の予測、エネルギー使用量の最適化など、都市の効率的な運営をサポートします。</p>
+          </div>
+
+          <div class="swiper-slide business-item">
+            <img src="img/ai-analytics.jpeg" alt="AI・データ解析のイメージ" class="business-image">
+            <h3>AI・データ解析サービス</h3>
+            <p>企業や自治体が持つビッグデータを活用し、予測分析・意思決定支援・業務自動化を提供。機械学習技術で新たな価値を創出します。</p>
+          </div>
+
+          <div class="swiper-slide business-item">
+            <img src="img/iot-platform.jpeg" alt="IoTプラットフォームのイメージ" class="business-image">
+            <h3>IoTプラットフォーム</h3>
+            <p>様々なデバイスを統合管理するプラットフォームを提供。リアルタイムデータ収集から可視化、アラート機能まで包括的にサポート。</p>
+          </div>
+
+          <div class="swiper-slide business-item">
+            <img src="img/dx-consulting.jpeg" alt="DXコンサルティングのイメージ" class="business-image">
+            <h3>DXコンサルティング</h3>
+            <p>企業のデジタル変革をトータルサポート。現状分析から戦略立案、システム導入、運用まで、お客様の変革を伴走します。</p>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="business-buttons">
+        <a href="business.html" class="btn btn-secondary">事業詳細を見る</a>
+        <a href="business.html#results" class="btn btn-secondary">実績紹介を見る</a>
+      </div>
+  </div>
+</section>
+
+<section class="news-section">
+  <div class="container">
+    <h2 class="section-title">お知らせ</h2>
+      <p class="section-subtitle">NextNovaからの最新情報やイベントのお知らせをお届けします。</p>
+    
+        <div class="news-content-wrapper">
+          <div class="news-list">
+            <div class="news-item">
+              <span class="news-date">2025.06.10</span>
+              <h3 class="news-title">次世代DXプラットフォームの提供開始</h3>
+              <p class="news-summary">中小企業向けに最適化されたDX導入支援サービスをスタートしました。</p>
+            </div>
+
+            <div class="news-item">
+              <span class="news-date">2025.05.28</span>
+              <h3 class="news-title">スマートシティ実証実験を開始</h3>
+             <p class="news-summary">都市開発におけるIoT活用の実証を関東エリアで実施します。</p>
+            </div>
+
+            <div class="news-item">
+              <span class="news-date">2025.05.15</span>
+              <h3 class="news-title">AI活用セミナー開催のお知らせ</h3>
+              <p class="news-summary">製造業・自治体向けにAI導入ノウハウを共有する無料セミナーを開催。</p>
+            </div>
+
+            <div class="news-item">
+              <span class="news-date">2025.05.01</span>
+              <h3 class="news-title">データ活用支援ツールの提供を開始</h3>
+              <p class="news-summary">企業のデータ利活用を支援する新サービスをローンチしました。</p>
+            </div>
+          </div>
+          <div class="news-button">
+            <a href="news.html" class="btn">もっと見る</a>
+          </div>
+        </div>
+  </div>
+  <div class="news-wave-container">
+    <svg class="news-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 320" preserveAspectRatio="none">
+      <path fill="#8bb7dc" fill-opacity="1"
+        d="M0,160 C480,240 960,80 1440,160 C1920,240 2400,80 2880,160 L2880,320 L0,320 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="recruit-section" id="careers">
+  <div class="container">
+    <h2>採用情報</h2>
+    <p class="recruit-intro">
+      NextNovaでは、未来の都市を共に創る仲間を募集しています。<br>
+    </p>
+
+    <div class="recruit-cards">
+      <div class="recruit-card">
+        <h3>エンジニア（IoT・AI）</h3>
+        <p>センサー連携やAI解析システムの開発など、最先端領域の開発に携わっていただきます。</p>
+        <a href="/careers/engineer.html" class="btn btn-small">募集要項を見る</a>
+      </div>
+
+      <div class="recruit-card">
+        <h3>DXコンサルタント</h3>
+        <p>自治体や企業の業務課題に対し、テクノロジーで解決を提案・伴走支援していくポジションです。</p>
+        <a href="/careers/consultant.html" class="btn btn-small">募集要項を見る</a>
+      </div>
+
+      <div class="recruit-card">
+        <h3>営業・アカウントマネージャー</h3>
+        <p>お客様との信頼関係を築き、最適なソリューション提案とプロジェクト推進を担います。</p>
+        <a href="/careers/sales.html" class="btn btn-small">募集要項を見る</a>
+      </div>
+    </div>
+
+    <a href="recruit.html" class="recruit-more-btn">採用情報をもっと見る</a>
+  </div>
+</section>
+
+<section class="contact-faq-section" id="contact">
+  <div class="inner-container">
+    <h2>お問い合わせ・よくあるご質問</h2>
+
+    <p class="contact-intro">
+      サービスに関するご質問・ご相談がありましたら、<br>まずは下記のよくあるご質問をご確認いただくか、お気軽にお問い合わせください。
+    </p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Q. サービス導入までの流れを教えてください</button>
+        <div class="faq-answer">
+          <p>初回ヒアリング後、ご提案・見積・契約・導入支援の順で進行します。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Q. 小規模なプロジェクトにも対応可能ですか？</button>
+        <div class="faq-answer">
+          <p>はい。規模に関わらず最適なソリューションをご提案いたします。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Q. セキュリティ対応はどうなっていますか？</button>
+        <div class="faq-answer">
+          <p>通信暗号化、アクセス制限、ログ監視など各種対策を実施しています。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-cta">
+      <a href="contact.html" class="btn">お問い合わせフォームへ</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner container">
+    <div class="footer-left">
+      <div class="footer-logo-area">
+        <div class="footer-logo">NextNova</div>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-col">
+        <h4>私たちは</h4>
+        <ul>
+          <li><a href="about.html">代表挨拶</a></li>
+          <li><a href="about.html#profile">会社概要</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>事業紹介</h4>
+        <ul>
+          <li><a href="business.html">サービス</a></li>
+          <li><a href="business.html#results">実績紹介</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>お知らせ</h4>
+        <ul>
+          <li><a href="news.html">一覧</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>採用</h4>
+        <ul>
+          <li><a href="recruit.html">募集要項</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a href="contact.html">フォーム</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="footer-company-tel">
+      <p class="footer-company">NextNova株式会社</p>
+      <p class="footer-tel">☏ 03-1234-5678</p>
+    </div>
+  <div class="footer-copy">
+    <p>&copy; 2025 NextNova Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script>
+    // ハンバーガーメニュー（デバッグ機能付き）
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('DOM loaded - ハンバーガーメニュー初期化開始');
+      
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      
+      if (!navToggle) {
+        console.error('nav-toggle要素が見つかりません');
+        return;
+      }
+      
+      if (!navLinks) {
+        console.error('nav-links要素が見つかりません');
+        return;
+      }
+      
+      console.log('ハンバーガーメニュー要素見つかりました');
+      
+      navToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('ハンバーガーメニューがクリックされました');
+        
+        navLinks.classList.toggle('active');
+        navToggle.classList.toggle('active');
+        
+        console.log('メニュー状態:', navLinks.classList.contains('active') ? '開' : '閉');
+      });
+
+      // メニューリンクをクリックした時にメニューを閉じる
+      document.querySelectorAll('.nav-links a').forEach((link, index) => {
+        link.addEventListener('click', () => {
+          console.log(`メニューリンク${index + 1}がクリックされました`);
+          navLinks.classList.remove('active');
+          navToggle.classList.remove('active');
+        });
+      });
+
+      // 画面の他の部分をクリックした時にメニューを閉じる
+      document.addEventListener('click', function(event) {
+        if (!navToggle.contains(event.target) && !navLinks.contains(event.target)) {
+          navLinks.classList.remove('active');
+          navToggle.classList.remove('active');
+        }
+      });
+      
+      // ウィンドウリサイズ時の処理
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+          navLinks.classList.remove('active');
+          navToggle.classList.remove('active');
+        }
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    const swiper = new Swiper('.business-swiper', {
+      loop: true,
+      spaceBetween: 30,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        }
+      }
+    });
+  </script>
+
+  <script>
+    // FAQアコーディオン
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        item.querySelector('.faq-question').addEventListener('click', () => {
+          // 他のFAQを閉じる
+          faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('active');
+              otherItem.querySelector('.faq-answer').style.display = 'none';
+            }
+          });
+          
+          // 現在のFAQをトグル
+          const answer = item.querySelector('.faq-answer');
+          item.classList.toggle('active');
+          if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+          } else {
+            answer.style.display = 'block';
+          }
+        });
+      });
+    });
+  </script>
+
+  <script>
+    // パーティクル
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        size: { value: 3 },
+        color: { value: "#ffffff" },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
+</body>
+</html>

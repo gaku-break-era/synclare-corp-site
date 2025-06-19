@@ -1,0 +1,256 @@
+<!DOCTYPE html> 
+<html lang="ja">
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ | NextNova</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+<header class="navbar">
+  <div class="container">
+    <div class="logo"><a href="top-page.html">NextNova</a></div>
+    <nav class="nav-links">
+      <a href="top-page.html">トップページ</a>
+      <a href="about.html">会社概要</a>
+      <a href="business.html">事業紹介</a>
+      <a href="news.html">お知らせ</a>
+      <a href="recruit.html">採用</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<section class="nn-news-intro">
+  <h1>お問い合わせ</h1>
+  <p>ご質問やご相談など、お気軽にお問い合わせください。<br>
+     私たちがお客様の課題解決をサポートします。</p>
+</section>
+      
+<section class="contact-page-section">
+    <div class="contact-form-container">
+      <form action="#" method="post" class="contact-form" id="contactForm">
+        <label for="name">お名前 <span>*</span></label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">メールアドレス <span>*</span></label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="company">会社名</label>
+        <input type="text" id="company" name="company" />
+
+        <label for="subject">件名</label>
+        <input type="text" id="subject" name="subject" />
+
+        <label for="message">お問い合わせ内容 <span>*</span></label>
+        <textarea id="message" name="message" rows="6" required placeholder="お問い合わせ内容をご記入ください"></textarea>
+
+        <div class="privacy-check">
+          <input type="checkbox" id="privacy" name="privacy" required>
+          <label for="privacy">プライバシーポリシーに同意します</label>
+        </div>
+
+        <button type="submit" class="contact-submit-btn">送信する</button>
+      </form>
+    </div>
+
+    <!-- トースト通知 -->
+    <div class="toast" id="toast">送信が完了しました。</div>
+</section>
+
+<!-- よくあるご質問セクション -->
+<section class="contact-faq-section" id="faq">
+  <div class="inner-container">
+    <h2>よくあるご質問</h2>
+
+    <p class="contact-intro">
+      お問い合わせ前に、下記のよくあるご質問もご確認ください。
+    </p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Q. サービス導入までの流れを教えてください</button>
+        <div class="faq-answer">
+          <p>初回ヒアリング後、ご提案・見積・契約・導入支援の順で進行します。通常、初回相談から導入まで1-3ヶ月程度いただいております。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Q. 小規模なプロジェクトにも対応可能ですか？</button>
+        <div class="faq-answer">
+          <p>はい。規模に関わらず最適なソリューションをご提案いたします。小規模から段階的に拡張していくアプローチも可能です。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Q. セキュリティ対応はどうなっていますか？</button>
+        <div class="faq-answer">
+          <p>通信暗号化、アクセス制限、ログ監視など各種対策を実施しています。お客様のセキュリティ要件に応じたカスタマイズも対応可能です。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Q. 料金体系について教えてください</button>
+        <div class="faq-answer">
+          <p>プロジェクトの規模や内容により異なります。まずはお気軽にご相談ください。無料でお見積りをご提案いたします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner container">
+    <div class="footer-left">
+      <div class="footer-logo-area">
+        <div class="footer-logo"><a href="top-page.html">NextNova</a></div>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-col">
+        <h4>私たちは</h4>
+        <ul>
+          <li><a href="about.html">代表挨拶</a></li>
+          <li><a href="about.html#profile">会社概要</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>事業紹介</h4>
+        <ul>
+          <li><a href="business.html">サービス</a></li>
+          <li><a href="business.html#results">実績紹介</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>お知らせ</h4>
+        <ul>
+          <li><a href="news.html">一覧</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>採用</h4>
+        <ul>
+          <li><a href="recruit.html">募集要項</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a href="contact.html">フォーム</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-company-tel">
+    <p class="footer-company">NextNova株式会社</p>
+    <p class="footer-tel">☏ 03-1234-5678</p>
+  </div>
+  <div class="footer-copy">
+    <p>&copy; 2025 NextNova Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // お問い合わせフォームの送信処理
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // 実際の送信処理はここに追加してください（AJAX等）
+    
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+    
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 3000);
+    
+    this.reset(); // フォームリセット
+  });
+
+  // FAQのアコーディオン機能
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    
+    question.addEventListener('click', () => {
+      // 他のFAQを閉じる
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+          otherItem.querySelector('.faq-answer').style.display = 'none';
+        }
+      });
+      
+      // 現在のFAQをトグル
+      item.classList.toggle('active');
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+      } else {
+        answer.style.display = 'block';
+      }
+    });
+  });
+
+  // ハンバーガーメニュー（デバッグ機能付き）
+  console.log('DOM loaded - ハンバーガーメニュー初期化開始');
+  
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  
+  if (!navToggle) {
+    console.error('nav-toggle要素が見つかりません');
+    return;
+  }
+  
+  if (!navLinks) {
+    console.error('nav-links要素が見つかりません');
+    return;
+  }
+  
+  console.log('ハンバーガーメニュー要素見つかりました');
+  
+  navToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log('ハンバーガーメニューがクリックされました');
+    
+    navLinks.classList.toggle('active');
+    navToggle.classList.toggle('active');
+    
+    console.log('メニュー状態:', navLinks.classList.contains('active') ? '開' : '閉');
+  });
+
+  // メニューリンクをクリックした時にメニューを閉じる
+  document.querySelectorAll('.nav-links a').forEach((link, index) => {
+    link.addEventListener('click', () => {
+      console.log(`メニューリンク${index + 1}がクリックされました`);
+      navLinks.classList.remove('active');
+      navToggle.classList.remove('active');
+    });
+  });
+
+  // 画面の他の部分をクリックした時にメニューを閉じる
+  document.addEventListener('click', function(event) {
+    if (!navToggle.contains(event.target) && !navLinks.contains(event.target)) {
+      navLinks.classList.remove('active');
+      navToggle.classList.remove('active');
+    }
+  });
+  
+  // ウィンドウリサイズ時の処理
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+      navLinks.classList.remove('active');
+      navToggle.classList.remove('active');
+    }
+  });
+});
+</script>
+</body>
+</html>
